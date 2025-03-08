@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { IconChessKnight, IconCalendarEvent, IconChess, IconMicrophone, IconMicrophone2, IconGrowth, IconTrendingUp } from "@tabler/icons-react";
 import { CardSpotlight } from "@/components/ui/card-spotlight";
-import { FloatingNavDemo } from "./navbar";
+
 
 export function CardSpotlightDemo() {
   return (
@@ -17,7 +17,7 @@ export function CardSpotlightDemo() {
         transition={{ duration: 0.8 }}
         className="text-center"
       >
-        <h1 className="text-4xl pt-20 font-bold flex justify-center items-center space-x-2">
+        <h1 className="text-4xl pt-20 md:pt-2 font-bold flex justify-center  space-x-2">
          
           <IconChessKnight size={40} stroke={1.5} />
           <span >About Us</span>
