@@ -5,36 +5,31 @@ import { CardSpotlight } from "@/components/ui/card-spotlight";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import Image from "next/image";
-
 export default function Events() {
-    const cards = data.map((card, index) => (
-        <Card key={card.src} card={card} index={index} />
-      ));
-  return (
-    <CardSpotlight className="min-h-screen w-full">
-     
-      <section className="relative w-full min-h-screen  text-white flex flex-col items-center  px-6 py-2">
-      {/* Header Section */}
-      <motion.div 
-        initial={{ opacity: 0, y: 30 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.8 }}
-        className="text-center"
-      >
-        
-      </motion.div>
-    </section>
-    <div className="h-20 bg-black"></div>
+  const cards = data.map((card, index) => (
+    <Card key={card.src} card={card} index={index} />
+  ));
 
-    <div className="w-full min-h-screen  py-20">
-          <h2 className="max-w-7xl pl-4 mx-auto text-3xl text-center md:text-5xl font-bold text-white dark:text-neutral-200 font-sans">
+  return (
+    <CardSpotlight className="min-h-screen w-full flex flex-col items-center justify-center bg-black">
+      <section className="relative w-full  px-6">
+        {/* Header Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="w-full text-center"
+        >
+          <h2 className="pt-24 text-4xl md:text-5xl font-bold text-white">
             Events
           </h2>
-          <Carousel items={cards} />
-        </div>
-      
+          {/* Carousel */}
+          <div className="mt-12">
+            <Carousel items={cards} />
+          </div>
+        </motion.div>
+      </section>
     </CardSpotlight>
-
   );
 }
 

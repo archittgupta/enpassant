@@ -8,7 +8,7 @@ export default function Home() {
     <BackgroundBeamsWithCollisionDemo/>
     
    
-    <div className="h-96"></div>
+    <div className="h-96 bg-gradient-to-b from-neutral-800 to-neutral-950 border-t"></div>
     
    
     </div>
