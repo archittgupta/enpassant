@@ -5,7 +5,7 @@ import { IconBrandFacebook, IconBrandTwitter, IconBrandInstagram, IconChess, Ico
 
 const Footer = () => {
   return (
-    <footer className=" bg-gradient-to-r from-black to-[#252525] border-t text-white py-6">
+    <footer className=" bg-[#181919] border-t text-white py-6">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
         
         {/* Logo & Copyright */}
